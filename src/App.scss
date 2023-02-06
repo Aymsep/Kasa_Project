@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+:root{
+    --primary-color : #FF6060;
+}
+svg{
+    vertical-align: middle;
+}
+
+.App{
+    width: 81.7%;
+    margin: 0 auto;
+    @media screen and (max-width:968px) {
+        width: 90%;
+    }
+}

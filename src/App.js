@@ -1,24 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+// internal import
+import './App.scss'
+import Navbar from './components/Navbar/Navbar';
+import Header from './components/Header/Header';
+import {images} from './constant'
+import Home from './pages/Home/Home';
+import Notfound from './pages/Notfound/Notfound';
+import Apropos from './pages/Apropos/Apropos';
+import Details from './pages/Details/Details';
+import Footer from './components/Footer/Footer';
+
+
+// external import
+import {BrowserRouter as Router , Routes , Route} from 'react-router-dom'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Router>
+      <Navbar/>
+        <Routes>
+          <Route index element={<Home/>}/>
+          <Route path='/apropos' element={<Apropos/>}/>
+          <Route path='/details/:id' element={<Details/>}/>
+          <Route path='*' element={<Notfound/>}/>
+        </Routes>
+        <Footer/>
+      </Router>
     </div>
+
   );
 }
 

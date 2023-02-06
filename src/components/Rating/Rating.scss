@@ -1,0 +1,13 @@
+.app__rating{
+    margin-top:15px;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width:1200px) {
+        height: 100%;
+     }
+    img{
+        width: 36px;
+        height: 36px;
+        object-fit: cover;
+    }
+}

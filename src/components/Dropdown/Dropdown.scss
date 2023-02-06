@@ -1,0 +1,29 @@
+.app__dropdown{
+    padding: 0 25px;
+    .app__dropdown-item{
+        margin-top: 2rem;
+        background-color: var(--primary-color);
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:.5rem .8rem  ;
+        border-radius: 6px;
+        p{
+            color: white;
+            font-size:1.3rem;
+        }
+        img{
+            vertical-align: middle;
+            height:20px;
+            width:20px;
+            cursor: pointer;
+        }
+    }
+    .app__dropdown-description{
+        background-color: #F6F6F6;
+        padding: .7rem;
+        li,p{
+            color: var(--primary-color);
+        }
+    }
+}

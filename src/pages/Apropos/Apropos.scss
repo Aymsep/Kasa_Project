@@ -1,0 +1,6 @@
+.app__apropos-items{
+    margin:2rem  5rem;
+    @media screen and (max-width:768px) {
+        margin-inline:10px ;
+    }
+}

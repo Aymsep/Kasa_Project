@@ -1,0 +1,21 @@
+.app__notfound{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 100vh;
+    color: var(--primary-color);
+    text-align: center;
+    h1{
+        font-size: 14vmax;
+    }
+    h2{
+        font-weight: 100;
+    }
+    a{
+        margin-top:85px;
+        color: var(--primary-color);
+        text-decoration:underline;
+    }
+}
