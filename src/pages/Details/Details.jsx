@@ -42,6 +42,7 @@ const Details = () => {
             <h2>{current_card.host.name}</h2>
             <img src={current_card.host.picture} alt="house owner image"   />
           </div>
+          
           <Rating number={current_card.rating}/>
 
         </div>
